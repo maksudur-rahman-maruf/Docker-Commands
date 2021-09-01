@@ -1,0 +1,35 @@
+
+
+
+Commands for Docker: 
+
+Using Docker file
+[
+
+// Building image
+docker build -t node-docker-tutorial .
+
+// Run image with interactive mode
+docker run -it -p 9001:3009 --name expressapp node-docker-tutorial
+
+docker run -it -p 9002:3000 --name reactapp react-docker-app
+
+]
+
+Using Docker Compose
+[
+
+// Building image
+docker-compose build
+
+// Run
+docker-compose up
+
+]
+
+
+
+sudo docker run --name MyJenkins2 -p 9090:8080 -p 50000:50000 -v /home/maruf/Jenkins_Home:/var/jenkins_home jenkins:2.60.3
+
+sudo docker run --name MyJenkins3 -p 9090:8080 -p 50000:50000 -v myjenkins:/var/jenkins_home jenkins:2.60.3
+
